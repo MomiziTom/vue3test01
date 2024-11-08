@@ -5,7 +5,7 @@
 			<span>this is sub heading</span>
 		</div>
 		<ul id="n">
-			<li v-for="article in articles" :key="article">
+			<li v-for="article in $store.state.second_articles" :key="article">
 				<div>
 					<img :src="article.thumbnail" :alt="article.alt" class="article-thumbnail">
 					<span>{{ article.text }}</span>
@@ -53,28 +53,7 @@ export default {
 	name: 'HomeSecondArticle',
 	data(){
 		return{
-			articles : [
-				{
-					thumbnail:require("@/assets/sample_thumbnail.png"),
-					alt:"aaa",
-					text:"これはサンプルテキストです。c4-621レイヴン"
-				},
-				{
-					thumbnail:require("@/assets/sample_thumbnail.png"),
-					alt:"bbb",
-					text:"これはサンプルテキストです。レイヴンの名を返せとは言いません"
-				},
-				{
-					thumbnail:require("@/assets/sample_thumbnail.png"),
-					alt:"ccc",
-					text:"これはサンプルテキストです。サンプルテキスト(例文)だけにレイヴンってね"
-				},
-				{
-					thumbnail:require("@/assets/sample_thumbnail.png"),
-					alt:"ddd",
-					text:"これはサンプルテキストです。このホームページを構築したのは、数学が得意なオオサワか！"
-				},
-			]
+			
 		}
 	}
 };

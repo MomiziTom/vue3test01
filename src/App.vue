@@ -1,32 +1,20 @@
 <template>
 	<header>	<!--ヘッダー要素は固定のものを使用-->
 		<div id="header_contents">
-			<img src="./assets/sample_logo.png" alt="logo" class="logo">
+			<router-link to="/"><img src="./assets/sample_logo.png" alt="logo" class="logo">{{ $store.state.company_information.name.content }}</router-link>
 			<div class="header-list">
 				<ul>
-					<li>
-						<router-link to="/">ホーム</router-link> 
+					<li v-for="home in $store.state.link.home" :key="home">
+						<router-link :to="home.url" v-if="home.header_display" class="header_link">{{ home.title }}</router-link>
 					</li>
-					<li>
-						<router-link to="/about">会社案内</router-link>
+					<li v-for="company_guide in $store.state.link.company_guide" :key="company_guide">
+						<router-link :to="company_guide.url" v-if="company_guide.header_display" class="header_link">{{ company_guide.title }}</router-link>
 					</li>
-					<li>
-						<router-link to="/about">業務内容</router-link>
+					<li v-for="product_guide in $store.state.link.product_guide" :key="product_guide">
+						<router-link :to="product_guide.url" v-if="product_guide.header_display" class="header_link">{{ product_guide.title }}</router-link>
 					</li>
-					<li>
-						<router-link to="/about">製品案内</router-link>
-					</li>
-					<li>
-						<router-link to="/about">ニュースリリース</router-link>
-					</li>
-					<li>
-						<router-link to="/about">コーラルリリース</router-link>
-					</li>
-					<li>
-						<router-link to="/about">採用情報</router-link>
-					</li>
-					<li>
-						<router-link to="/about">お問い合わせ</router-link>
+					<li v-for="link_guide in $store.state.link.link_guide" :key="link_guide">
+						<router-link :to="link_guide.url" v-if="link_guide.header_display" class="header_link">{{ link_guide.title }}</router-link>
 					</li>
 				</ul>
 			</div>
@@ -78,10 +66,17 @@ header{
 	margin-right: auto;
 }
 
-.header-list li {
+.header-list ul {
+	margin: 30px 0px;
+}
+
+.header-list ul li {
 	list-style: none;
 	float: left;
-	padding: 15px 25px;
+}
+
+.header_link{
+	margin: 25px 25px;
 }
 
 #app {
@@ -118,4 +113,18 @@ nav a.router-link-exact-active {
 	color:blue;
 }
 
+.content-part{
+	margin:0 15%;
+}
+
+.title-center{
+	width:100%;
+	padding: 100px 0px;
+	background-color:rgb(208, 208, 208);
+}
+
+tr, th, td{
+	text-align: left;
+	padding: 10px 20px;
+}
 </style>

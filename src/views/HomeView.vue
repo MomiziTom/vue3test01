@@ -1,13 +1,13 @@
 <template>
 	<div class="home">
 		<div id="home-title">
-			<div id="title-text">
+			<div id="company-name">
 				<p>株式会社サンプル</p>
 				<p>Sample Company</p>
 			</div>
-			<img src="@/assets/sample_picture.png" alt="title_picture" id="title-picture">
+			<img src="@/assets/sample_picture.png" alt="title_picture" id="company-picture">
 		</div>
-		<div id="home_contents">
+		<div class="content-part">
 			<HomeTopArticle />
 			<HomeSecondArticle />
 			<HomeThirdArticle />
@@ -57,7 +57,7 @@ export default {
 	position: relative;
 }
 
-#home-title #title-text{
+#home-title #company-name{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -65,14 +65,10 @@ export default {
 	color: white;
 }
 
-#title-picture{
+#company-picture{
 	width: 100%;
 	height: 30em; 
 	object-fit: cover;
-}
-
-#home_contents{
-	margin:0 15%;
 }
 
 </style>
