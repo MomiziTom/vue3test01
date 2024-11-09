@@ -23,27 +23,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@media screen and (min-width:768px){
 
-ul{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content:space-between;
-	margin:0px 0px;
-	padding: 0;
-}
+	ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		margin:0px 0px;
+		padding: 0;
+	}
 
-li{
-	width: 10em;
-	list-style: none;
-	text-align:left;
-}
+	li{
+		width: 10em;
+		list-style: none;
+		text-align:left;
+	}
 
-.article-text{
-	width: 10em;
+	.article-text{
+		width: 10em;
+	}
+	.article-thumbnail{
+		width: 10em;
+		height: 10em;
+	}
 }
-.article-thumbnail{
-	width: 10em;
-	height: 10em;
-}
-
 </style>

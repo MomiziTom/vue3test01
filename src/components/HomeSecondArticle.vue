@@ -61,31 +61,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ul{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content:space-between;
-	padding: 0px;
-	margin: 0px;
-}
+@media screen and (min-width:768px){
+	ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		padding: 0px;
+		margin: 0px;
+	}
 
-li{
-	list-style: none;
-}
+	li{
+		list-style: none;
+	}
 
-li div{
-	display:flex ;
-	width: 400px;
-	margin:0px 0px 20px;
-}
+	li div{
+		display:flex ;
+		width: 400px;
+		margin:0px 0px 20px;
+	}
 
-li div span{
-	text-align: left;
-}
+	li div span{
+		text-align: left;
+	}
 
-.article-thumbnail{
-	width: 12em;
-	height: 12em;
+	.article-thumbnail{
+		width: 12em;
+		height: 12em;
+	}
 }
 
 </style>

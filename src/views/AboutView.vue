@@ -60,22 +60,23 @@
 </template>
 
 <style scoped>
+@media screen and (min-width:768px){
 
-#greeting{
-	display: flex;
+	#greeting{
+		display: flex;
+	}
+
+	#text-greeting{
+		text-align: left;
+		width: 60%;
+	}
+
+	#picture-president{
+		width: 40%;
+	}
+
+	#picture-president img{
+		width: 250px;
+	}
 }
-
-#text-greeting{
-	text-align: left;
-	width: 60%;
-}
-
-#picture-president{
-	width: 40%;
-}
-
-#picture-president img{
-	width: 250px;
-}
-
 </style>

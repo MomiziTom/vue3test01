@@ -13,13 +13,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#top-article{
-	display: flex;
-	justify-content:space-between;
-	margin: 10px 0px;
+@media screen and (min-width:768px){
+
+	#top-article{
+		display: flex;
+		justify-content:space-between;
+		margin: 10px 0px;
+	}
+
+	.article-picture{
+		width: 45%;
+	}
 }
 
-.article-picture{
-	width: 45%;
-}
 </style>

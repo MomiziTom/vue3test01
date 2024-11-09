@@ -18,13 +18,16 @@
 </template>
 
 <style>
-.input-form{
-	margin: 5% 30%;
-	text-align: left;
-}
+@media screen and (min-width:768px){
 
-.input-form form{
-	background-color: rgb(208, 208, 208);
-	padding: 50px 0 50px 20%;
+	.input-form{
+		margin: 5% 30%;
+		text-align: left;
+	}
+
+	.input-form form{
+		background-color: rgb(208, 208, 208);
+		padding: 50px 0 50px 20%;
+	}
 }
 </style>

@@ -53,22 +53,23 @@ export default {
 -->
 
 <style scoped>
-#home-title{
-	position: relative;
-}
+@media screen and (min-width:768px){
+	#home-title{
+		position: relative;
+	}
 
-#home-title #company-name{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	color: white;
-}
+	#home-title #company-name{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		color: white;
+	}
 
-#company-picture{
-	width: 100%;
-	height: 30em; 
-	object-fit: cover;
+	#company-picture{
+		width: 100%;
+		height: 30em; 
+		object-fit: cover;
+	}
 }
-
 </style>

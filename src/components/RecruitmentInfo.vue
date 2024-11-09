@@ -8,3 +8,18 @@
 		</div>
 	</div>
 </template>
+
+<style scoped>
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+</style>

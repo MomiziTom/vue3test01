@@ -49,36 +49,40 @@ export default {
 </script>
 
 <style scoped>
-footer{
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #c04621;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
 
-#footer_contents{
-	margin: 0 10%;
-	display: flex;
-	text-align: left;
-	justify-content: space-between;
-	align-items: flex-start;
-}
+@media screen and (min-width:768px){
 
-#footer_contents *{
-	width: 200px;
-	margin: 5px 0;
-	list-style: none;
-	text-align: left;
-	padding-left: 0;
-}
+	footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #c04621;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	}
 
-#logo{
-	width: 50px;
-	height: 50px;
-}
-.guide_top{
-	border-bottom: 1px solid black;
+	#footer_contents{
+		margin: 0 10%;
+		display: flex;
+		text-align: left;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	#footer_contents *{
+		width: 200px;
+		margin: 5px 0;
+		list-style: none;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	#logo{
+		width: 50px;
+		height: 50px;
+	}
+	.guide_top{
+		border-bottom: 1px solid black;
+	}
 }
 </style>
