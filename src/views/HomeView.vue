@@ -2,8 +2,8 @@
 	<div class="home">
 		<div id="home-title">
 			<div id="company-name">
-				<p>株式会社サンプル</p>
-				<p>Sample Company</p>
+				<p>{{ $store.state.company_information.name.content }}</p>
+				<p>{{ $store.state.company_information.name.alphabet }}</p>
 			</div>
 			<img src="@/assets/sample_picture.png" alt="title_picture" id="company-picture">
 		</div>
@@ -53,23 +53,40 @@ export default {
 -->
 
 <style scoped>
+#home-title{
+	position: relative;
+}
+
+#home-title #company-name{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+
 @media screen and (min-width:768px){
-	#home-title{
-		position: relative;
-	}
-
-	#home-title #company-name{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		color: white;
-	}
-
 	#company-picture{
 		width: 100%;
 		height: 30em; 
 		object-fit: cover;
 	}
 }
+
+@media screen and (max-width:768px){
+	#company-picture{
+		width: 100%;
+		height: 15em; 
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width:480px){
+	#company-picture{
+		width: 100%;
+		height: 15em; 
+		object-fit: cover;
+	}
+}
+
 </style>

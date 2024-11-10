@@ -90,4 +90,15 @@ export default {
 	}
 }
 
+@media screen and (max-width:768px){
+	.article-thumbnail{
+		width: 12em;
+		height: 12em;
+	}
+}
+
+@media screen and (max-width:480px){
+
+}
+
 </style>

@@ -36,7 +36,7 @@ export default {
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
 
 }
 

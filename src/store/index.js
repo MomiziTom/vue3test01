@@ -85,7 +85,8 @@ export default createStore({
 		company_information : {
 			name:{
 				item:"会社名",
-				content:"株式会社サンプル"
+				content:"株式会社サンプル",
+				alphabet:"Sample Company"
 			},
 			location:{
 				item:"本社所在地",

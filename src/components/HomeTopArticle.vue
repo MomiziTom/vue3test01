@@ -26,4 +26,19 @@ export default {
 	}
 }
 
+@media screen and (max-width:768px){
+	#top-article{
+			margin: 10px auto;
+			text-align: center;
+		}
+	.article-picture{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width:480px){
+
+}
+
 </style>

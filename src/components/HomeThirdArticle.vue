@@ -47,4 +47,17 @@ export default {
 		height: 10em;
 	}
 }
+
+@media screen and (max-width:768px){
+	.article-thumbnail{
+		width: 10em;
+		height: 10em;
+	}
+
+}
+
+@media screen and (max-width:480px){
+
+}
+
 </style>

@@ -30,4 +30,13 @@
 		padding: 50px 0 50px 20%;
 	}
 }
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:480px){
+
+}
+
 </style>

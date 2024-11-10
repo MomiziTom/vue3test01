@@ -49,17 +49,21 @@ export default {
 </script>
 
 <style scoped>
-
-@media screen and (min-width:768px){
-
-	footer{
+footer{
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	background: #c04621;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	}
+}
+
+#logo{
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (min-width:768px){
 
 	#footer_contents{
 		margin: 0 10%;
@@ -77,12 +81,17 @@ export default {
 		padding-left: 0;
 	}
 
-	#logo{
-		width: 50px;
-		height: 50px;
-	}
 	.guide_top{
 		border-bottom: 1px solid black;
 	}
 }
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:480px){
+
+}
+
 </style>
