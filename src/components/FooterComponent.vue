@@ -63,6 +63,7 @@ footer{
 	height: 50px;
 }
 
+/* PC表示*/
 @media screen and (min-width:768px){
 
 	#footer_contents{
@@ -86,10 +87,12 @@ footer{
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
 
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }

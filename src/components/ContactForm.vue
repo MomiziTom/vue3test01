@@ -18,6 +18,7 @@
 </template>
 
 <style>
+/* PC表示*/
 @media screen and (min-width:768px){
 
 	.input-form{
@@ -31,10 +32,12 @@
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
 
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }

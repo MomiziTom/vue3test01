@@ -8,45 +8,12 @@
 			<li v-for="article in $store.state.second_articles" :key="article">
 				<div>
 					<img :src="article.thumbnail" :alt="article.alt" class="article-thumbnail">
-					<span>{{ article.text }}</span>
+					<span class="article-text">{{ article.text }}</span>
 				</div>
 			</li>
 		</ul>
 	</div>
 </template>
-
-<!--
-<template>
-		<div id="second-article">
-			<ul>
-				<li>
-					<div>
-						<img src="@/assets/sample_thumbnail.png" alt="article-thumbnail1" class="article-thumbnail">
-						<span>sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text end</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="@/assets/sample_thumbnail.png" alt="article-thumbnail2" class="article-thumbnail">
-						<span>sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text end</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="@/assets/sample_thumbnail.png" alt="article-thumbnail2" class="article-thumbnail">
-						<span>sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text end</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="@/assets/sample_thumbnail.png" alt="article-thumbnail2" class="article-thumbnail">
-						<span>sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text end</span>
-					</div>
-				</li>
-			</ul>
-		</div>
-</template>
--->
 
 <script>
 export default {
@@ -61,6 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* PC表示*/
 @media screen and (min-width:768px){
 	ul{
 		display: flex;
@@ -90,13 +58,40 @@ export default {
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
-	.article-thumbnail{
-		width: 12em;
-		height: 12em;
+	#second-article{
+		width:90%;
+		margin: 10px auto;
+		text-align: center;
 	}
+
+	ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	li{
+		width: 40vw;
+		list-style: none;
+		text-align:left;
+	}
+
+	li div{
+		width: 40vw;
+	}
+
+	.article-thumbnail{
+		width: 40vw;
+		height: 40vw;
+	}
+
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }

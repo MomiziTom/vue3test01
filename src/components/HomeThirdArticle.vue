@@ -23,6 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* PC表示*/
 @media screen and (min-width:768px){
 
 	ul{
@@ -42,20 +43,52 @@ export default {
 	.article-text{
 		width: 10em;
 	}
+
 	.article-thumbnail{
 		width: 10em;
 		height: 10em;
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
-	.article-thumbnail{
-		width: 10em;
-		height: 10em;
+	#third-article * {
+		font-size: small;
+		line-height:1em;
 	}
+	#third-article{
+		width:90%;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	li{
+		width: 28vw;
+		list-style: none;
+		text-align:left;
+	}
+
+	li div{
+		width: 28vw;
+	}
+
+	.article-thumbnail{
+		width: 28vw;
+		height: 28vw;
+	}
+
 
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }

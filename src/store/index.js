@@ -147,11 +147,6 @@ export default createStore({
 					url:"/contact",
 					header_display:true,
 				},
-				{
-					title:"サイトマップ",
-					url:"/",
-					header_display:false,
-				},
 			],
 			product_guide : [
 				{
@@ -234,7 +229,7 @@ export default createStore({
 				url:"/news/2024/1/2/0"
 			},
 		],
-
+		hamburger_state: false,
 	},
 	getters: {
 		sorted_news(state){
@@ -244,6 +239,12 @@ export default createStore({
 		},
 	},
 	mutations: {
+		hamburger_switch(state){
+			state.hamburger_state = !state.hamburger_state;
+		},
+		hamburger_off(state){
+			state.hamburger_state = false;
+		}
 	},
 	actions: {
 	},

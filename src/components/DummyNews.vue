@@ -7,14 +7,18 @@
 </template>
 
 <style scoped>
+
+/* PC表示*/
 @media screen and (min-width:768px){
 
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
 
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }

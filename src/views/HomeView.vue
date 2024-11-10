@@ -31,33 +31,12 @@ export default {
 }
 </script>
 
-<!--
-<template>
-	<div class="home">
-		<VueTestFile msg="Welcome to Your Vue.js App"/>
-	</div>
-</template>
-
-
-<script>
-// @ is an alias to /src
-import VueTestFile from '@/components/VueTestFile.vue'
-
-export default {
-	name: 'HomeView',
-	components: {
-		VueTestFile
-	}
-}
-</script>
--->
-
 <style scoped>
 #home-title{
 	position: relative;
 }
 
-#home-title #company-name{
+#company-name{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -65,6 +44,7 @@ export default {
 	color: white;
 }
 
+/* PC表示*/
 @media screen and (min-width:768px){
 	#company-picture{
 		width: 100%;
@@ -73,7 +53,13 @@ export default {
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
+	#company-name{
+		line-height:4px;
+		text-align:center;
+	}
+
 	#company-picture{
 		width: 100%;
 		height: 15em; 
@@ -81,7 +67,13 @@ export default {
 	}
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
+	#company-name{
+		line-height:1px;
+		text-align:center;
+	}
+
 	#company-picture{
 		width: 100%;
 		height: 15em; 

@@ -13,6 +13,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* PC表示*/
 @media screen and (min-width:768px){
 
 	#top-article{
@@ -26,17 +27,19 @@ export default {
 	}
 }
 
+/* タブレット表示*/
 @media screen and (max-width:768px){
 	#top-article{
-			margin: 10px auto;
-			text-align: center;
-		}
+		margin: 10px auto;
+		text-align: center;
+	}
 	.article-picture{
 		width: 90%;
 	}
 
 }
 
+/* スマホ表示*/
 @media screen and (max-width:480px){
 
 }
