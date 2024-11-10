@@ -1,13 +1,15 @@
 <template>
 	<header>	<!--ヘッダー要素は固定のものを使用-->
-		<div id="header-contents">
+				<div id="header-contents">
 			<p id="logo-company-name">
 				<router-link to="/">
 					<table>
-						<tr>
-							<td><img src="./assets/sample_logo.png" alt="logo" class="logo"></td>
-							<td><span id="header-company-name">{{ $store.state.company_information.name.content }}</span></td>
-						</tr>
+						<tbody>
+							<tr>
+								<td><img src="./assets/sample_logo.png" alt="logo" class="logo"></td>
+								<td><span id="header-company-name">{{ $store.state.company_information.name.content }}</span></td>
+							</tr>
+						</tbody>
 					</table>
 				</router-link>
 			</p>
@@ -15,20 +17,22 @@
 			<!-- PC用ナビゲーション -->
 			<nav id="header-list-pc">
 				<table>
-					<tr>
-						<td v-for="home in $store.state.link.home" :key="home">
-							<router-link :to="home.url" v-if="home.header_display" class="header-link">{{ home.title }}</router-link>
-						</td>
-						<td v-for="company_guide in $store.state.link.company_guide" :key="company_guide">
-							<router-link :to="company_guide.url" v-if="company_guide.header_display" class="header-link">{{ company_guide.title }}</router-link>
-						</td>
-						<td v-for="product_guide in $store.state.link.product_guide" :key="product_guide">
-							<router-link :to="product_guide.url" v-if="product_guide.header_display" class="header-link">{{ product_guide.title }}</router-link>
-						</td>
-						<td v-for="link_guide in $store.state.link.link_guide" :key="link_guide">
-							<router-link :to="link_guide.url" v-if="link_guide.header_display" class="header-link">{{ link_guide.title }}</router-link>
-						</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td v-for="home in $store.state.link.home" :key="home">
+								<router-link :to="home.url" v-if="home.header_display" class="header-link">{{ home.title }}</router-link>
+							</td>
+							<td v-for="company_guide in $store.state.link.company_guide" :key="company_guide">
+								<router-link :to="company_guide.url" v-if="company_guide.header_display" class="header-link">{{ company_guide.title }}</router-link>
+							</td>
+							<td v-for="product_guide in $store.state.link.product_guide" :key="product_guide">
+								<router-link :to="product_guide.url" v-if="product_guide.header_display" class="header-link">{{ product_guide.title }}</router-link>
+							</td>
+							<td v-for="link_guide in $store.state.link.link_guide" :key="link_guide">
+								<router-link :to="link_guide.url" v-if="link_guide.header_display" class="header-link">{{ link_guide.title }}</router-link>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</nav>
 

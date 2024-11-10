@@ -74,7 +74,6 @@ footer{
 	}
 
 	#footer_contents *{
-		width: 200px;
 		margin: 5px 0;
 		list-style: none;
 		text-align: left;
@@ -82,6 +81,7 @@ footer{
 	}
 
 	.guide_top{
+		width: 200px;
 		border-bottom: 1px solid black;
 	}
 }
