@@ -159,6 +159,8 @@ nav a.router-link-exact-active {
 	}
 
 	#header-list-pc{
+		height:100%;
+		text-align: cente;
 		margin: auto 0px auto auto;
 	}
 
